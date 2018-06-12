@@ -34,10 +34,12 @@
             this.lblStance = new System.Windows.Forms.Label();
             this.txtStance = new System.Windows.Forms.TextBox();
             this.cmbFire = new System.Windows.Forms.ComboBox();
+            this.cmbStance = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cmbPoison
             // 
+            this.cmbPoison.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPoison.FormattingEnabled = true;
             this.cmbPoison.Location = new System.Drawing.Point(304, 107);
             this.cmbPoison.Name = "cmbPoison";
@@ -77,19 +79,31 @@
             this.txtStance.Name = "txtStance";
             this.txtStance.Size = new System.Drawing.Size(143, 20);
             this.txtStance.TabIndex = 33;
+            this.txtStance.Visible = false;
             // 
             // cmbFire
             // 
+            this.cmbFire.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFire.FormattingEnabled = true;
             this.cmbFire.Location = new System.Drawing.Point(304, 72);
             this.cmbFire.Name = "cmbFire";
             this.cmbFire.Size = new System.Drawing.Size(143, 21);
             this.cmbFire.TabIndex = 38;
             // 
+            // cmbStance
+            // 
+            this.cmbStance.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStance.FormattingEnabled = true;
+            this.cmbStance.Location = new System.Drawing.Point(304, 36);
+            this.cmbStance.Name = "cmbStance";
+            this.cmbStance.Size = new System.Drawing.Size(143, 21);
+            this.cmbStance.TabIndex = 39;
+            // 
             // frmDragonWestern
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(487, 374);
+            this.Controls.Add(this.cmbStance);
             this.Controls.Add(this.cmbFire);
             this.Controls.Add(this.cmbPoison);
             this.Controls.Add(this.lblPoison);
@@ -103,6 +117,7 @@
             this.Controls.SetChildIndex(this.lblPoison, 0);
             this.Controls.SetChildIndex(this.cmbPoison, 0);
             this.Controls.SetChildIndex(this.cmbFire, 0);
+            this.Controls.SetChildIndex(this.cmbStance, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +131,6 @@
         private System.Windows.Forms.Label lblStance;
         private System.Windows.Forms.TextBox txtStance;
         private System.Windows.Forms.ComboBox cmbFire;
+        private System.Windows.Forms.ComboBox cmbStance;
     }
 }

@@ -51,6 +51,7 @@
             this.lstBreeds.Name = "lstBreeds";
             this.lstBreeds.Size = new System.Drawing.Size(287, 147);
             this.lstBreeds.TabIndex = 1;
+            this.lstBreeds.DoubleClick += new System.EventHandler(this.lstBreeds_DoubleClick);
             // 
             // btnViewDragons
             // 
@@ -60,6 +61,7 @@
             this.btnViewDragons.TabIndex = 2;
             this.btnViewDragons.Text = "View Dragons";
             this.btnViewDragons.UseVisualStyleBackColor = true;
+            this.btnViewDragons.Click += new System.EventHandler(this.btnViewDragons_Click);
             // 
             // btnViewOrders
             // 
@@ -69,6 +71,7 @@
             this.btnViewOrders.TabIndex = 3;
             this.btnViewOrders.Text = "Check Orders";
             this.btnViewOrders.UseVisualStyleBackColor = true;
+            this.btnViewOrders.Click += new System.EventHandler(this.btnViewOrders_Click);
             // 
             // btnSaveQuit
             // 
@@ -76,8 +79,9 @@
             this.btnSaveQuit.Name = "btnSaveQuit";
             this.btnSaveQuit.Size = new System.Drawing.Size(120, 23);
             this.btnSaveQuit.TabIndex = 4;
-            this.btnSaveQuit.Text = "Save and Quit";
+            this.btnSaveQuit.Text = "Quit";
             this.btnSaveQuit.UseVisualStyleBackColor = true;
+            this.btnSaveQuit.Click += new System.EventHandler(this.btnSaveQuit_Click);
             // 
             // frmMain
             // 
@@ -91,6 +95,7 @@
             this.Controls.Add(this.lblWelcome);
             this.Name = "frmMain";
             this.Text = "Main Menu";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

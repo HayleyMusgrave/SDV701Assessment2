@@ -38,6 +38,7 @@
             // 
             // cmbFlight
             // 
+            this.cmbFlight.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFlight.FormattingEnabled = true;
             this.cmbFlight.Location = new System.Drawing.Point(304, 107);
             this.cmbFlight.Name = "cmbFlight";
